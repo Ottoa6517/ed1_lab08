@@ -43,7 +43,7 @@ class E02AVLTreeTest {
             final String fileContent = new String(
                     Objects.requireNonNull(E02AVLTreeTest.class.getClassLoader()
                                     .getResourceAsStream("ed/lab/E03.csv"))
-                            .readAllBytes());
+                            .readAllBytes()).replace("\r\n", "\n");
 
             final String[] lines = fileContent.split("\n");
 
